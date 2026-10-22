@@ -97,7 +97,7 @@ void DPLayer::reloadData(bool isInit) {
 		//list
 		auto listReq = web::WebRequest();
 
-		std::string dataURL = "https://raw.githubusercontent.com/Minemaker0430/gddp-mod-database/main/main-list.json";
+		std::string dataURL = "https://raw.githubusercontent.com/belaouchiachraf864-hue/thumbs/main/gddp-list.json";
 
 		auto fileCheck = file::readDirectory(Mod::get()->getConfigDir()).unwrapOrDefault();
 		auto secretFile = Mod::get()->getConfigDir() += std::filesystem::path("\\client_id.txt");
